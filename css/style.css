@@ -42,6 +42,25 @@ body {
   overflow-y: scroll;
   font-family: 'Source Sans Pro', sans-serif; }
 
+  .waviy {
+    position: relative;
+    text-align: center;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 80px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -185,7 +204,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: black;
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -323,7 +342,7 @@ textarea {
           font-size: 1.7rem; } }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background:black;
   background-size: cover;
   background-position: center; }
   .contact__form-container {
